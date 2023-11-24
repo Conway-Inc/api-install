@@ -19,7 +19,7 @@ cd api-coleta-dados-maquina
 
 echo "Criando container"
 sudo docker pull mysql:5.7
-sudo docker run -d -p 3306:3306 --name ContainerBD -e "MYSQL_DATABASE=ConWay" -e "MYSQL_ROOT_PASSWORD=urubu100" mysql:5.7
+sudo docker run -d -p 3306:3306 --name ContainerBD -e "ConWay" -e "urubu100" mysql:5.7
 sudo docker exec -it ContainerBD mysql -u root -p -e "script-conway.sql"
 
 cd java/
