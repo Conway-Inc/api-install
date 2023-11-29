@@ -29,4 +29,4 @@ sudo docker cp ./script-conway.sql ContainerBD:/docker-entrypoint-initdb.d/
 cd java/
 
 echo "Executando API"
-api-bruno.jar
+bruno-api.jar
